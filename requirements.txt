@@ -1,0 +1,21 @@
+# JARVIS Requirements
+# ─────────────────────────────────────────────
+
+# === CORE (required) ===
+requests>=2.31.0          # HTTP calls to Ollama
+
+# === TTS — pick one ===
+pyttsx3>=2.90             # Offline TTS (easy, decent)
+# elevenlabs>=0.2.26      # Premium TTS (amazing voice, API key needed)
+
+# === STT — pick one ===
+openai-whisper>=20231117  # Offline STT (best quality)
+sounddevice>=0.4.6        # Audio recording for Whisper
+soundfile>=0.12.1         # WAV file handling
+numpy>=1.24.0             # Required by Whisper
+# SpeechRecognition>=3.10  # Google STT fallback (internet required)
+# pyaudio>=0.2.13          # Required by SpeechRecognition
+
+# === WAKE WORD (optional) ===
+# pvporcupine>=3.0.0       # Wake word engine (free tier available)
+# pvrecorder>=1.2.0        # Microphone recorder for Porcupine
